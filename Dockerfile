@@ -1,9 +1,10 @@
-FROM ich777/debian-baseimage
+FROM ich777/winehq-baseimage
 
 LABEL maintainer="admin@minenet.at"
 
-RUN apt-get update && \
-	apt-get -y install --no-install-recommends lib32gcc1 && \
+RUN dpkg --add-architecture i386 && \
+	apt-get update && \
+	apt-get -y install lib32gcc1 screen xvfb && \
 	rm -rf /var/lib/apt/lists/*
 
 ENV DATA_DIR="/serverdata"
