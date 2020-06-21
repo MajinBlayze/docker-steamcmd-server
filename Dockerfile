@@ -10,7 +10,7 @@ RUN dpkg --add-architecture i386 && \
 ENV DATA_DIR="/serverdata"
 ENV STEAMCMD_DIR="${DATA_DIR}/steamcmd"
 ENV SERVER_DIR="${DATA_DIR}/serverfiles"
-ENV GAME_ID="template"
+ENV GAME_ID="489830"
 ENV WS_CONTENT=""
 ENV GAME_PARAMS=""
 ENV VALIDATE=""
